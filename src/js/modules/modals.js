@@ -10,6 +10,7 @@ const modals = () => {
                 if (e.target) {
                     e.preventDefault();
                 }
+                document.querySelectorAll('[data-modal]').forEach(item => {item.style.display = 'none';})
                 document.body.style.overflow = 'hidden';
                 modal.style.display = 'block';
             });
@@ -25,11 +26,15 @@ const modals = () => {
         close.addEventListener('click', () => {
             modal.style.display = 'none';
             document.body.style.overflow = '';
+            document.querySelectorAll('[data-modal]').forEach(item => {item.style.display = 'none';})
         });
     }
 
     modalShow('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
     modalShow('.phone_link', '.popup', '.popup .popup_close');
+    modalShow('.popup_calc_btn', '.popup_calc', '.popup_calc_close');
+    modalShow('.popup_calc_button', '.popup_calc_profile', '.popup_calc_profile_close');
+    modalShow('.popup_calc_profile_button', '.popup_calc_end', '.popup_calc_end_close');
 
     function showAutoModal(modalSelector, time) {
         setTimeout(() => {
