@@ -15466,6 +15466,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider */ "./src/js/slider.js");
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/forms */ "./src/js/modules/forms.js");
+/* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_forms__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
@@ -15473,7 +15477,19 @@ window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_2__["default"])('.glazing_slider', '.glazing_block', '.glazing_content', 'active');
   Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_2__["default"])('.decoration_slider', '.no_click', '.decoration_content > div > div', 'after_click');
+  _modules_forms__WEBPACK_IMPORTED_MODULE_3___default()();
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/forms.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/forms.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/danya/Desktop/windows/src/js/modules/forms.js: Unexpected token (8:16)\n\n\u001b[0m \u001b[90m  6 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  7 | \u001b[39m    \u001b[36mconst\u001b[39m message \u001b[33m=\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 | \u001b[39m        waiting \u001b[33m=\u001b[39m \u001b[32m'Загрузка...'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m        success \u001b[33m=\u001b[39m \u001b[32m'Все прошло успешно!'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 | \u001b[39m        fail \u001b[33m=\u001b[39m \u001b[32m'Что-то пошло не так...'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m    }\u001b[33m;\u001b[39m\u001b[0m\n    at Parser.raise (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:6975:17)\n    at Parser.unexpected (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:8368:16)\n    at Parser.parseMaybeAssign (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:9019:12)\n    at Parser.parseVar (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:11307:26)\n    at Parser.parseVarStatement (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:11126:10)\n    at Parser.parseStatementContent (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:10723:21)\n    at Parser.parseStatement (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:10656:17)\n    at Parser.parseBlockOrModuleBlockBody (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:11232:25)\n    at Parser.parseBlockBody (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:11219:10)\n    at Parser.parseBlock (/Users/danya/Desktop/windows/node_modules/@babel/parser/lib/index.js:11203:10)");
 
 /***/ }),
 
