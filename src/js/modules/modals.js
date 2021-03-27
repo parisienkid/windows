@@ -38,7 +38,7 @@ const modals = () => {
         }, time);
     }
 
-    showAutoModal('.popup', 60000);
+    // showAutoModal('.popup', 60000);
 
 };
 
