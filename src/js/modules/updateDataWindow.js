@@ -41,18 +41,26 @@ const updateDataWindow = (data) => {
 
     function addDataInCalc(elem, event, name) {
             elem.forEach(item => {
-                item.addEventListener(event, () => {
+
+                function updateData() {
                     if (elem === windowProfile) {
-                        data[name] = item.nextElementSibling.getAttribute('id');
-                        if (item.nextElementSibling.getAttribute('id') === 'warm') {
-                            windowProfile[0].checked = false;
-                        } else {
-                            windowProfile[1].checked = false;
+                        if (item.checked === true) {
+                            windowProfile.forEach(i => {
+                                if (i != item) {
+                                    i.checked = false;
+                                    data[name] = item.nextElementSibling.getAttribute('id');
+                                }
+                            });
                         }
                     } else {
                         data[name] = item.value;
                     }
-                    console.log(data);
+                }
+
+                updateData();
+
+                item.addEventListener(event, () => {
+                    updateData();
                 });
             });
         }

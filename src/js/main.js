@@ -3,10 +3,12 @@ import modals from './modules/modals';
 import tabs from './modules/tabs';
 import form from './modules/forms';
 import updateDataWindow from './modules/updateDataWindow';
+import timer from './modules/timer';
 
 window.addEventListener('DOMContentLoaded', () => {
 
     let dataWindow = {}; 
+    const deadline = '2021-08-20';
     
     modals();
     tabs('.glazing_slider', '.glazing_block', '.glazing_content', 'active');
@@ -14,4 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs('.balcon_icons', '.balcon_icons_img', '.big_img > img', 'do_image_more', 'inline-block');
     updateDataWindow(dataWindow);
     form(dataWindow);
+    timer('#timer', deadline);
 });
