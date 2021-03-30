@@ -1,2 +1,2 @@
 # Practice JS
-## layout - not mine
+## layout - not mine, used ТЗ
